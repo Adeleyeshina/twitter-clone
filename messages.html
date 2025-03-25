@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages / X</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap offline css file embedded-->
+    <link rel="stylesheet" href="css/style.css"> <!--Our CSS file-->
+    <link rel="stylesheet" href="icons/css/all.css"> <!--Font Awesome offline icon file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="icon" href="images/x-logo.png"> <!--X-twitter favicon logo-->
+  
+     <!--Bootstrap offline Js file embedded-->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid text-white">
+        <div class="row messages">
+            <!--------------------left column navigation bar of twitter--------------------->
+            <div class="col-lg-3 col-md-2 col-sm-1 ">
+                <div class="nav-content position-fixed ">
+                    <a href="index.html" class="d-inline-block">
+                        <!-- logo -->
+                        <div style="padding: 10px; margin-left: 10px;">
+                            <i class="fa-brands fa-x-twitter" style="font-size: 30px;"></i>
+                        </div>
+                    </a>
+                    <!--Navigations-->
+                    <a href="index.html">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="explore.html">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                    <a href="notifications.html">
+                        <div class="nav-item">
+                            <i class="bi bi-bell"></i>
+                            <span>Notifications</span>
+                        </div>
+                    </a>
+                    <a href="messages.html">
+                        <div class="nav-item">
+                            <i class="bi bi-envelope"></i>
+                            <span>Messages</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Grok</span>
+                        </div>
+                    </a>
+                    <a href="communities.html">
+                        <div class="nav-item">
+                            <i class="bi bi-people"></i>
+                            <span>Communities</span>
+                        </div>
+                    </a>
+                    <a href="profile.html">
+                        <div class="nav-item">
+                            <i class="bi bi-person"></i>
+                            <span>Profile</span>
+                        </div>
+                    </a>
+                    <button class="text-start">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>More</span>
+                        </div>
+                    </button>
+
+                    <a href="#" class="post bg-primary mt-3">  
+                        <span>Post</span>
+                        <div>  <i class="fa-solid fa-house"></i></div>
+                          
+                    </a>
+
+
+                    <!-- ------------bottom left profile on navigation----------------- -->
+                    <button class="nav-profile mt-4">    
+                        <div>
+                            <img src="images/profile-img.jpg" alt="" class=" mt-1 profile-img">
+                            <span class="mt-1 float-end d-flex text-start">
+                               <span>
+                                    <h6 class="mb-0">Ebenezer Olayemi</h6>
+                                    <small>@Olayemi_2003</small>
+                               </span>
+                                <i class="fa-solid fa-ellipsis mt-2 ms-3"></i>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-----------------------The middle part of the twitter home page---------------->
+            <div class="col-lg-3  col-md-7 col-sm-10 middle border border-bottom-0 border-top-0 p-0 position-relative" >
+                <div class="top mx-3 d-flex justify-content-between mt-3">
+                    <h4 class="h4">Messages</h4>
+                    <div class="messages">
+                        <i class="bi bi-gear icn text-white top-icn" style="font-size: 20px;">
+                            <p class="more mt-3">settings</p>
+                        </i>
+
+                        <i class="bi bi-envelope-plus icn text-white top-icn" style="font-size: 20px;">
+                            <p class="more mt-3">New message</p>
+                        </i>
+                    </div>
+                </div>
+
+                <div class="message mt-5 w-75 mx-auto">
+                    <h3>Welcome to your inbox!</h3>
+                    <small>Drop a line, share posts and more with private conversations between you and others on X</small>
+                    <div>
+                        <a href="#" class="btn text-white bg-primary rounded-pill btn-lg">Write a message</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!----------------------Right column of the twitter home page--------------------->
+            <div class="col-lg-5 position-relative"  >
+                <div class="message">
+                    <span class="d-block">
+                        <h3>Select a message</h3>
+                        <small>Choose from your existing conversations, start a <br> new one, or just keep swimming.</small>
+                        <div>
+                            <a href="#" class="btn text-white bg-primary rounded-pill btn-lg">New message</a>
+                        </div>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

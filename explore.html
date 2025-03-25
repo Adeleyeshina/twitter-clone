@@ -1,0 +1,776 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore / X</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap offline css file embedded-->
+    <link rel="stylesheet" href="css/style.css"> <!--Our CSS file-->
+    <link rel="stylesheet" href="icons/css/all.css"> <!--Font Awesome offline icon file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="icon" href="images/x-logo.png"> <!--X-twitter favicon logo-->
+  
+     <!--Bootstrap offline Js file embedded-->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid text-white">
+        <div class="row">
+            <!--------------------left column navigation bar of twitter--------------------->
+            <div class="col-lg-3 col-md-2 col-sm-1 ">
+                <div class="nav-content position-fixed ">
+                    <a href="index.html" class="d-inline-block">
+                        <!-- logo -->
+                        <div style="padding: 10px; margin-left: 10px;">
+                            <i class="fa-brands fa-x-twitter" style="font-size: 30px;"></i>
+                        </div>
+                    </a>
+                    <!--Navigations-->
+                    <a href="index.html">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="explore.html">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                    <a href="notifications.html">
+                        <div class="nav-item">
+                            <i class="bi bi-bell"></i>
+                            <span>Notifications</span>
+                        </div>
+                    </a>
+                    <a href="messages.html">
+                        <div class="nav-item">
+                            <i class="bi bi-envelope"></i>
+                            <span>Messages</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Grok</span>
+                        </div>
+                    </a>
+                    <a href="communities.html">
+                        <div class="nav-item">
+                            <i class="bi bi-people"></i>
+                            <span>Communities</span>
+                        </div>
+                    </a>
+                    <a href="profile.html">
+                        <div class="nav-item">
+                            <i class="bi bi-person"></i>
+                            <span>Profile</span>
+                        </div>
+                    </a>
+                    <button class="text-start">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>More</span>
+                        </div>
+                    </button>
+
+                    <a href="#" class="post bg-primary mt-3">  
+                        <span>Post</span>
+                        <div>  <i class="fa-solid fa-house"></i></div>
+                          
+                    </a>
+
+
+                    <!-- ------------bottom left profile on navigation----------------- -->
+                    <button class="nav-profile mt-4">    
+                        <div>
+                            <img src="images/profile-img.jpg" alt="" class=" mt-1 profile-img">
+                            <span class="mt-1 float-end d-flex text-start">
+                               <span>
+                                    <h6 class="mb-0">Ebenezer Olayemi</h6>
+                                    <small>@Olayemi_2003</small>
+                               </span>
+                                <i class="fa-solid fa-ellipsis mt-2 ms-3"></i>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-----------------------The middle part of the twitter home page---------------->
+            <div class="col-lg-5 explore col-md-7 col-sm-10 border border-bottom-0 border-top-0 p-0 position-relative" >
+                
+                <div class="position-sticky top-0" style="width: 100%; z-index: 10; background-color: black;">
+                                        <!-- middle search bar on the explore page -->
+                    <div class="d-flex justify-content-between explore-search mx-3">
+                        <div class="d-none ex-bck">
+                            <i class="fa-solid fa-arrow-left icn mt-3 me-3" style="font-size: 20px;">
+                                <p class="more">Back</p>
+                            </i>
+                        </div>
+                        <div class="search w-75 me-3" style="flex: 1;">
+                            <div class="search-bar">
+                                <i class="fa-solid fa-search text-secondary"></i>
+                                <input type="text" placeholder="Search" spellcheck="false" id="sera" autocomplete="off" class="w-75">
+                                <span class="badge bg-primary rounded-pill text-dark float-end" style="opacity: 0; cursor: pointer;">
+                                    <i class="fa-solid fa-x"></i>
+                                </span>
+        
+                                <div class="search-abt text-center text-secondary">
+                                    <div class="progress" style="height: 3px;">
+                                        <div class="progress-bar" style="width: 0%;"></div>
+                                    </div>
+                                    <p class="mt-4">Try search for people, lists or keyword</p>
+                                </div>
+                            </div>    
+                        </div>
+
+                        <div>
+                            <i class="bi bi-gear icn text-white mt-3 top-icn" style="font-size: 20px;">
+                                <p class="more mt-3">settings</p>
+                            </i>
+                        </div>
+                    </div>
+
+
+                    <div class="middle-nav d-flex justify-content-around border-bottom text-secondary mt-1">
+                        <div class="tablinks" onclick="opentab('foryou', 'foryou')"><p class="tab foryou activated bold-nav ">For you</p></div>
+                        <div class="tablinks" onclick="opentab('trending', 'trending')"><p class="tab trending">Trending</p></div>
+                        <div class="tablinks" onclick="opentab('news', 'news')"><p class="tab news">News</p></div>
+                        <div class="tablinks" onclick="opentab('sports', 'sports')"><p class="tab sports">Sports</p></div>
+                        <div class="tablinks" onclick="opentab('entertainment', 'entertainment')"><p class="tab entertainment">Entertainment</p></div>
+                    </div>
+                   
+                </div>
+
+                <div class="position-relative">
+                    <!-- ------------------------ for you -------------------------------------- -->
+                    <div class="middle-content active-tab pb-5 position-relative w-100" id="foryou">
+                        <div>
+                            <h4 class="h4 mt-2 ms-3">Trends for you</h4>
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>President Bola Ahmed Tinubu</h5>
+                                    <small>3,847 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Nigeria</small>
+                                    <h5>Tiwa</h5>
+                                    <small>4,366 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Music·Trending</small>
+                                    <h5>Nicki</h5>
+                                    <small>61.1K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Nigeria</small>
+                                    <h5>Priscilla</h5>
+                                    <small>6,951 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Entertainment·Trending</small>
+                                    <h5>Kehinde Bankole</h5>
+                                    <small>1,433 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <div class="show-more">
+                                <a href="#" class="text-primary mb-2 ms-3 d-block">Show more</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ------------------------ Trending -------------------------------------- -->
+                    <div class="middle-content pb-5 position-relative w-100" id="trending">
+                        <div>
+                            <h4 class="h4 mt-2 ms-3">Nigeria trends</h4>
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>1 &middot; Football &#183; Trending</small>
+                                    <h5>Galatasaray</h5>
+                                    <small>455K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>2 &#183; Trending</small>
+                                    <h5>Dangote</h5>
+                                    <small>33K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>3 &#183; Trending</small>
+                                    <h5>#Bet9jaBigWins</h5>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                    
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>4 &#183; Trending</small>
+                                    <h5>#6DaysOfOpportunity</h5>
+                                    <small>1,062 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>5 &#183; Trending</small>
+                                    <h5>#fuel</h5>
+                                    <small>181K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>6 &#183; Trending</small>
+                                    <h5>Turkey</h5>
+                                    <small>53.9K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>7 &#183; Trending</small>
+                                    <h5>boypee constantly</h5>
+                                    <small>1,297 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>8 &#183; Trending</small>
+                                    <h5>$SYS</h5>
+                                    <small>4,230 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>9 &#183; Trending</small>
+                                    <h5> #LaborDay</h5>
+                                    <small>107K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>10 &#183; Trending</small>
+                                    <h5>Batist</h5>
+                                    <small>8,178 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+                        </div>
+                        <div></div>
+                    </div>
+                    <!-- ------------------------ news -------------------------------------- -->
+                    <div class="middle-content position-relative pb-5 w-100" id="news">
+                        <div>
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>President Bola Ahmed Tinubu</h5>
+                                    <small>3,847 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>Peter Obi</h5>
+                                    <small>30.3K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>President Tinubu</h5>
+                                    <small>20K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>Islamophobia</h5>
+                                    <small>35.8K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Business & finance</small>
+                                    <h5>The World Bank</h5>
+                                    <small>8,799 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Business & finance</small>
+                                    <h5>Aliko Dangote</h5>
+                                    <small>7,807 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending</small>
+                                    <h5>islamiste</h5>
+                                    <small>33.7K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>Great Hall of the People</h5>
+                                    <small>3,528 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>Forum</h5>
+                                    <small>59.7K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Politics</small>
+                                    <h5>#RussialsATerroristState</h5>
+                                    <small>1,386 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <!-- ------------------------ sports -------------------------------------- -->
+                    <div class="middle-content position-relative pb-5 w-100" id="sports">
+                        <div>
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Galatasaray</h5>
+                                    <small>456K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>#PAKvsBAN</h5>
+                                    <small>15.8K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Kante</h5>
+                                    <small>7,457 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Saudi League</h5>
+                                    <small>5,626 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Pooja</h5>
+                                    <small>20.8K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Turkish</h5>
+                                    <small>53.9K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>#TeamIndia</h5>
+                                    <small>4,717 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Koeman</h5>
+                                    <small>8,223 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Cricket</small>
+                                    <h5>#BabarAzam</h5>
+                                    <small>6,138 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Sports</small>
+                                    <h5>Licha</h5>
+                                    <small>2,553 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                        </div>
+                        <div></div>
+                    </div>
+
+                    <!-- ------------------------  Entertainment -------------------------------------- -->
+                    <div class="middle-content position-relative pb-5 w-100" id="entertainment">
+                        <div>
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Entertainment</small>
+                                    <h5>Brain Jotter</h5>
+                                    <small>3,143 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>Sarkodie</h5>
+                                    <small>4,416 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Entertainment</small>
+                                    <h5>Kehinde Bankole</h5>
+                                    <small>1,445 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>#달려라석진</h5>
+                                    <small>60.3K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>doyoung</h5>
+                                    <small>103K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>NCTZEN APOLOGIZE TO YOONGI</h5>
+                                    <small>26.5K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>#RightPeopleWrongPlace</h5>
+                                    <small>8,944 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Fashion & beauty</small>
+                                    <h5>#PoloRLStyle</h5>
+                                    <small>50K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>Matthew</h5>
+                                    <small>56.2K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block w-100">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Music</small>
+                                    <h5>Xiumin</h5>
+                                    <small>14.4K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="position-absolute w-100 bottom-0"></div>
+                </div>
+            </div>
+
+
+
+
+
+            <!----------------------Right column of the twitter home page--------------------->
+            <div class="col-lg-4 position-fixed end-0" >
+                <div class="right ms-4 me-5 position-relative">
+
+                    <div class="content-box mt-1">                         
+                        <!-- who to follow -->
+
+                        <div class="who-to-follow right-contents">
+                           <div class="contents"> <h4>Who to follow</h4></div>
+                           
+                            <a href="#" class="d-block">
+                                <div class="d-flex justify-content-between follow">
+                                    <div class="contents">
+                                        <img src="images/davido.jpg" alt="" class="float-start mt-1">
+                                        <div class="d-inline-block">
+                                            <h5 class="d-inline-block mb-0">Davido</h5>
+                                            <i class="bi bi-patch-check-fill text-primary"></i>
+                                            <div><small style="font-size: 16px;">@davido</small></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-white text-dark rounded-pill px-3 mt-3 me-3" style="font-weight: 600;">Follow</button>
+                                    </div>
+                                   
+                                </div>
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="d-flex justify-content-between follow">
+                                    <div class="contents">
+                                        <img src="images/peter-obi.jpg" alt="" class="float-start mt-1">
+                                        <div class="d-inline-block">
+                                            <h5 class="d-inline-block mb-0">Peter Obi</h5>
+                                            <i class="bi bi-patch-check-fill text-primary"></i>
+                                            <div><small style="font-size: 16px;">@PeterObi</small></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-white text-dark rounded-pill px-3 mt-3 me-3" style="font-weight: 600;">Follow</button>
+                                    </div>
+                                   
+                                </div>
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="d-flex justify-content-between follow">
+                                    <div class="contents">
+                                        <img src="images/channel-img.jpg" alt="" class="float-start mt-1">
+                                        <div class="d-inline-block">
+                                            <h5 class="d-inline-block mb-0">Channels Television</h5>
+                                            <i class="bi bi-patch-check-fill text-primary"></i>
+                                            <div><small style="font-size: 16px;">@channelstv</small></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-white text-dark rounded-pill px-3 mt-3 me-3" style="font-weight: 600;">Follow</button>
+                                    </div>
+                                   
+                                </div>
+                            </a>
+
+                            <div class="show-more">
+                                <a href="#" class="text-primary mb-2 ms-3 d-block">Show more</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-nav">
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                            <a href="#">Accessibility</a>
+                            <a href="#">Ads info</a>
+                            <a href="#">More <i class="fa-solid fa-ellipsis"></i></a>
+                            <p class="d-inline-block">&copy; 2024 X Corps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

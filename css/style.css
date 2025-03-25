@@ -1,0 +1,507 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #000000;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+}
+/* --------------------------left navigation bar------------------------------ */
+.nav-content a,
+.nav-content button {
+    display: block;
+    margin-left: 35px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.nav-content i {
+    font-size: 25px;
+}
+.nav-content a div, .nav-content button div{
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+}
+.nav-content a:hover div,
+.nav-content button:hover div{
+    background-color: rgba(255, 255, 255, .2);
+    transition: .3s;
+}
+.nav-item span {
+    margin-left: 10px;
+}
+.nav-content button {
+    background: transparent;
+    color: #fff;
+    border: none;
+}
+.post {
+    text-align: center;
+    border-radius: 50px;
+    max-width: 80%;
+    padding: 10px 20px;
+    transition: .3s;
+}
+.post i{
+    display: none;
+}
+.post:hover {
+    opacity: .9;
+}
+.profile-img {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+    float: left;
+}
+small {
+    margin: 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, .4);
+}
+
+/*----------------------- middle part of the twitter page */
+.middle-nav div {
+    text-align: center;
+    padding: 15px 0 15px;
+    width: 100%;
+    cursor: pointer;
+}
+.tab{
+    text-align: center;
+    margin-bottom: 0;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+.tab.activated::after{
+    content: " ";
+    height: 4px;
+    width: 100%;
+    display: block;
+    background-color: #0d6efd;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -13px;
+}
+.bold-nav {
+    color: #fff;
+    font-weight: 600;
+}
+
+/* -----------------wwhere the middle nav is have a sticky head----------------------- */
+.middle-nav {
+    position: sticky;
+    top: 0;
+}
+.middle-nav div:hover {
+    background-color: rgba(255, 255, 255, .1);
+    transition: .3s;
+}
+.tweet img {
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 20px;
+    float: left;
+}
+.textarea {
+    width: 100%;
+    display: block;
+    outline: 0;
+    margin: 10px 30px 20px 0;
+    font-size: 23px;
+    cursor:text;
+}
+.textarea[contenteditable]:empty::before{
+    content: "What is happening?!";
+    color: gray;
+    font-size: 20px;
+}
+
+#everyone p {
+    border-radius: 12px;
+    padding: 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 0;
+}
+#everyone p:hover {
+    background-color: rgba(13, 110, 253, .1);
+}
+.icn {
+    border-radius: 40px;
+    padding: 8px;
+    display: block;
+    position: relative;
+    display: inline-block;
+    color: grey;
+    transition: .2s;
+    cursor: pointer;
+}
+.icn:hover{
+    background-color: rgba(13, 110, 253, .2);
+    color: #0d6efd;
+}
+i p{
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    background-color: rgba(133, 136, 139, 0.87);
+    color: #fff;
+    padding: 2px 6px 3px;
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -35px;
+    display: none;
+}
+.middle i.fa-globe-americas:hover {
+    background-color: transparent;
+}
+.middle-content h2 {
+    font-weight: 700;
+}
+.btn {
+    font-weight: 600;
+}
+.middle-content {
+    display: none;
+}
+.middle-content:last-child {
+    width: 62%;
+}
+.middle-content.active-tab {
+    display: block;
+}
+small span:hover, .creator h5:hover {
+    text-decoration: underline;
+}
+.middle i.bi-patch-check-fill {
+    padding: 0;
+}
+.reply:hover i{
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, .1);
+    transition: .3s;
+}
+.reply:hover small {
+    color: #0d6efd;
+    transition: .3s;
+}
+.repost:hover i{
+    color: aquamarine;
+    background-color: rgba(127, 255, 212, .1);
+    transition: .3s;
+}
+.repost:hover small {
+    color: aquamarine;
+    transition: .3s;
+}
+.like:hover i{
+    color: rgb(231, 16, 124);
+    background-color: rgba(231, 16, 124, .1);
+    transition: .3s;
+}
+.like:hover small {
+    color: rgb(231, 16, 124);;
+    transition: .3s;
+}
+.view:hover i{
+    color: #0d6efd;
+    background-color: rgba(13, 110, 253, .1);
+    transition: .3s;
+}
+.view:hover small {
+    color: #0d6efd;
+    transition: .3s;
+}
+
+.img-post {
+    margin-bottom: 10px;
+}
+.img-post img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+/* ---------------------------right column---------------------------------------- */
+.search {
+    top: 0;
+    z-index: 3;
+    background-color: #000000;
+    padding-top: 10px;
+}
+input {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.search-bar {
+    background-color: rgba(255, 255, 255, .2);
+    padding: 12px 12px 12px 25px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+.search-bar input {
+    margin-left: 20px;
+    width: 75%;
+}
+.search-abt{
+    display: none;
+    width: 100%;
+    height: 110px;
+    border-radius: 10px;
+    padding-top: .5px;
+    box-shadow: 0 0 7px 0 rgba(255, 255, 255, .5);
+    position: absolute;
+    left: 0;
+    bottom: -112px;
+    z-index: 2;
+    background-color: #000000;
+}
+.progress {
+   width: calc(100% - 10px);
+   margin: auto;
+    background-color: #000000;
+    z-index: 2;
+}
+.content-box {
+    margin-top: 80px;
+    z-index: -1;
+}
+.right-contents {
+    border: .1px solid grey;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 0px;
+    z-index: -1;
+}
+.right-contents h4, .h4{
+    font-size: 22px;
+    font-weight: 700;
+}
+.contents {
+    margin: 10px 0;
+    padding-left: 18px;
+}
+.contents small {
+    font-size: 14px;
+}
+.contents h5, .creator h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+.trends i {
+    margin-right: 15px;
+}
+.trends a:hover, .explore .middle-content a:hover {
+    background-color: rgba(255, 255, 255, .1);
+}
+.show-more a:hover {
+    background: none;
+}
+.contents img {
+    width: 40px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.who-to-follow a:hover img{
+    opacity: .9;
+}
+.follow h5:hover {
+    text-decoration: underline;
+}
+.follow button:hover {
+    opacity: .9;
+}
+.footer-nav {
+    font-size: 14px;
+    color: grey;
+    margin: 15px 0 0 10px;
+}
+.footer-nav a {
+    color: grey;
+    margin-right: 7px;
+}
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1296px) {
+    .col-lg-3{
+       padding: 0;
+       margin: 0;
+       width: auto;
+    }
+    .col-md-2 {
+        width: 100px;
+        margin-left: 50px;
+    }
+    .nav-content a span {
+        display: none;
+    }
+    .nav-content a div, .nav-content button div {
+        padding: 12px;
+        border-radius: 25px;
+    }
+    .nav-profile, .nav-profile i {
+        display: none;
+    }
+     .nav-content:first-of-type span {
+        display: none;
+    }
+    .post {
+       width: 50px;
+       padding: 0;
+    }
+    .post i {
+        display: block;
+    }
+    
+}
+@media screen and (max-width: 1020px) {
+    .col-lg-4 {
+        display: none;
+    }
+    .nav-content a,
+    .nav-content button {
+        margin-left: 0;
+    }
+    .tweet img {
+        width: 40px;
+    }
+   
+}
+@media screen and (max-width: 800px) {
+   .col-sm-1 {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    text-align: left;
+   }
+   .col-sm-10 {
+    flex: 1;
+   }
+}
+
+/* --------------------------------- explore ---------------------------------------------------- */
+.explore-search i.icn:hover, .top-icn:hover {
+    background-color: rgba(255, 255, 255, .1);
+    color: gray;
+}
+.top-icn .more {
+    font-style: normal;
+    bottom: -50px;
+    left: -10px;
+    white-space: nowrap;
+}
+.explore .middle-content .icn {
+    margin-right: 15px;
+}
+
+/* --------------------------------- messages ---------------------------------------------------- */
+.messages .col-lg-5 {
+    border-right: 1px solid #f5f5f5;
+    flex: 1;
+    margin-right: 3%;
+}
+.col-lg-3:nth-of-type(even) {
+    flex-basis: 28%;
+    height: 100vh; 
+}
+.messages h3, .messages a {
+    font-weight: 800;
+}
+.message > span {
+    width: 70%;
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+.message a  {
+    font-weight: 700;
+    padding: 5px 36px 10px;
+    margin-top: 30px;
+}
+/* -----------------media query for message page ----------- */
+@media screen and (max-width: 1020px) {
+    .messages .col-lg-5 {
+        display: none;
+    }
+    .col-lg-3:nth-of-type(even) {
+        flex: 1;
+        margin-right: 3%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .col-lg-3:nth-of-type(even){
+        margin-right: 0;
+    }
+}
+/* ------------------------------ communities ---------------------------------------------------- */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.carousel-item ul li{
+    display: inline-block;
+    border: 1px solid gray;
+    padding: 5px 20px 7px;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: 700;
+    cursor: pointer;
+    overflow: auto;
+    z-index: 3;
+    margin-top: 10px;
+}
+#twitter .top-icn {
+    background-color: rgba(133, 136, 139, 0.87);
+    z-index: 6;
+    display: none;
+}
+.com-small {
+    margin-left: 50px;
+}
+.com-small span {
+    font-size: 14px;
+    margin-left: 7px;
+}
+/* ------------------------------- Profile ------------------------------------------- */
+.big-profile-img img{
+    height: 150px;
+    border: 5px solid black;
+    margin-top: -70px;
+    margin-left: 25px;
+    transition: .3s;
+}
+.big-profile-img img:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+.profile button {
+    font-weight: 700;
+    background: transparent;
+    padding: 7px 15px;
+    color: #fff;
+    border: 1px solid gray;   
+    margin-right: 30px; 
+    border-radius: 50px;
+    transition: .3s;
+}
+.profile button:hover {
+    background-color: rgba(127, 255, 212, .1);
+}

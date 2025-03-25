@@ -1,0 +1,373 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications / X</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"> <!--Bootstrap offline css file embedded-->
+    <link rel="stylesheet" href="css/style.css"> <!--Our CSS file-->
+    <link rel="stylesheet" href="icons/css/all.css"> <!--Font Awesome offline icon file-->
+    <link rel="stylesheet" href="icons/bootstrap-icons.min.css">
+    <link rel="icon" href="images/x-logo.png"> <!--X-twitter favicon logo-->
+  
+     <!--Bootstrap offline Js file embedded-->
+    <script defer src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <div class="container-fluid text-white">
+        <div class="row">
+            <!--------------------left column navigation bar of twitter--------------------->
+            <div class="col-lg-3 col-md-2 col-sm-1 ">
+                <div class="nav-content position-fixed ">
+                    <a href="index.html" class="d-inline-block">
+                        <!-- logo -->
+                        <div style="padding: 10px; margin-left: 10px;">
+                            <i class="fa-brands fa-x-twitter" style="font-size: 30px;"></i>
+                        </div>
+                    </a>
+                    <!--Navigations-->
+                    <a href="index.html">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Home</span>
+                        </div>
+                    </a>
+                    <a href="explore.html">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <span>Explore</span>
+                        </div>
+                    </a>
+                    <a href="notifications.html">
+                        <div class="nav-item">
+                            <i class="bi bi-bell"></i>
+                            <span>Notifications</span>
+                        </div>
+                    </a>
+                    <a href="messages.html">
+                        <div class="nav-item">
+                            <i class="bi bi-envelope"></i>
+                            <span>Messages</span>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>Grok</span>
+                        </div>
+                    </a>
+                    <a href="communities.html">
+                        <div class="nav-item">
+                            <i class="bi bi-people"></i>
+                            <span>Communities</span>
+                        </div>
+                    </a>
+                    <a href="profile.html">
+                        <div class="nav-item">
+                            <i class="bi bi-person"></i>
+                            <span>Profile</span>
+                        </div>
+                    </a>
+                    <button class="text-start">
+                        <div class="nav-item">
+                            <i class="fa-solid fa-house"></i>
+                            <span>More</span>
+                        </div>
+                    </button>
+
+                    <a href="#" class="post bg-primary mt-3">  
+                        <span>Post</span>
+                        <div>  <i class="fa-solid fa-house"></i></div>
+                          
+                    </a>
+
+
+                    <!-- ------------bottom left profile on navigation----------------- -->
+                    <button class="nav-profile mt-4">    
+                        <div>
+                            <img src="images/profile-img.jpg" alt="" class=" mt-1 profile-img">
+                            <span class="mt-1 float-end d-flex text-start">
+                               <span>
+                                    <h6 class="mb-0">Ebenezer Olayemi</h6>
+                                    <small>@Olayemi_2003</small>
+                               </span>
+                                <i class="fa-solid fa-ellipsis mt-2 ms-3"></i>
+                            </span>
+                        </div>
+                    </button>
+                </div>
+
+            </div>
+
+            <!-----------------------The middle part of the twitter home page---------------->
+
+            <div class="col-lg-5  col-md-7 col-sm-10 middle border border-bottom-0 border-top-0 p-0 position-relative" >
+                <!-- top part for the middle  -->
+                <div class="position-sticky top-0" style="background-color: rgba(0, 0, 0, .9);">
+                    <div class="top mx-3 d-flex justify-content-between mt-3">
+                        <h4 class="h4">Notifications</h4>
+                        <div class="notification">
+                            <i class="bi bi-gear icn text-white top-icn" style="font-size: 20px;">
+                                <p class="more mt-3">settings</p>
+                            </i>
+                        </div>
+                    </div>
+                   <div class="middle-nav d-flex justify-content-around border-bottom text-secondary">
+                        <div class="tablinks" onclick="opentab('all', 'all')"><p class="tab all activated bold-nav ">All</p></div>
+                        <div class="tablinks" onclick="opentab('verified', 'verified')"><p class="tab verified">Verified</p></div>
+                        <div class="tablinks" onclick="opentab('mentions', 'mentions')"><p class="tab mentions">Mentions</p></div>
+                   </div>
+                </div>
+
+                <!-- ----------------- All ------------------------- -->
+                <div class="middle-content mx-auto active-tab mt-5" id="all" style="width: 70%;">
+                    <h2>Nothing to see here  — <br> yet</h2>
+                    <p class="text-secondary">
+                        From likes to reposts and a whole lot more, this is where all the action happens.
+                    </p>
+                </div>
+                <!-- -----------------verified------------------------- -->
+                <div class="middle-content mx-auto  mt-5" id="verified" style="width: 70%;">
+                    <img src="images/twitter-verified-img.png" class="d-block mb-4" alt="">
+                    <h2>Nothing to see here - <br> yet</h2>
+                    <p class="text-secondary">
+                        Likes, mentions, reposts, and a whole lot more <br> — when it comes from a verified account, you’ll find it here.
+                        <a href="#" style="text-decoration: underline;">Learn more</a>
+                    </p>
+                </div> 
+
+                <!-- ----------------- Mention ------------------------- -->
+                <div class="middle-content mx-auto mt-5" id="mentions" style="width: 70%;">
+                <h2>Nothing to see here - <br> yet</h2>
+                <p class="text-secondary">
+                    When someone mentions you, you’ll find it here.
+                </p>
+            </div>
+                   
+            </div>
+
+
+            <!----------------------Right column of the twitter home page--------------------->
+            <div class="col-lg-4"  >
+                <div class="right ms-4 me-5 position-relative">
+                    <div class="search position-fixed w-100">
+                        <div class="search-bar " style="width: 26%;">
+                            <i class="fa-solid fa-search text-secondary"></i>
+                            <input type="text" placeholder="Search" spellcheck="false" id="sera" autocomplete="off">
+                            <span class="badge bg-primary rounded-pill text-dark float-end" style="opacity: 0; cursor: pointer;">
+                                <i class="fa-solid fa-x"></i>
+                            </span>
+
+                            <div class="search-abt text-center text-secondary">
+                                <div class="progress" style="height: 3px;">
+                                    <div class="progress-bar" style="width: 0%;"></div>
+                                </div>
+                                <p class="mt-4">Try search for people, lists or keyword</p>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    
+
+                    <div class="content-box">
+                        
+                        <!-- Trend for you -->
+                        <div class=" trends right-contents">
+                            <h4 class="px-3">Trends for you</h4>
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Nigeria</small>
+                                    <h5>Blum</h5>
+                                    <small>35.5K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Nigeria</small>
+                                    <h5>Jennifer</h5>
+                                    <small>39.2K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Entertainment.Trending</small>
+                                    <h5>Anita</h5>
+                                    <small>24.8K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+                            
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Music.Trending</small>
+                                    <h5>TG Omori</h5>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Nigeria</small>
+                                    <h5>#hallelujahchallenge</h5>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Sport.Trending</small>
+                                    <h5>Welcome to the Aresenal</h5>
+                                    <small>17.1K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+                            
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Business & finance.Trending</small>
+                                    <h5>$DOGS</h5>
+                                    <small>506K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Trending in Nigeria</small>
+                                    <h5>Olumide Akpata</h5>
+                                    <small>6,317 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Entertainment.Trending</small>
+                                    <h5>CONGRATULATIONS SHAUN</h5>
+                                    <small>9,260 posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+
+                            
+                            <a href="#" class="d-block">
+                                <div class="contents d-inline-block">
+                                    <small>Sports.Trending</small>
+                                    <h5>Baide</h5>
+                                    <small>10.5K posts</small>
+                                </div>
+                                <i class="fa-solid fa-ellipsis float-end mt-4 icn">
+                                    <p class="more">More</p>
+                                </i>       
+                            </a>
+                            <div class="show-more">
+                                <a href="#" class="text-primary mb-2 ms-3 d-block">Show more</a>
+                            </div>
+                        </div>
+
+                        <!-- who to follow -->
+
+                        <div class="who-to-follow right-contents">
+                           <div class="contents"> <h4>Who to follow</h4></div>
+                           
+                            <a href="#" class="d-block">
+                                <div class="d-flex justify-content-between follow">
+                                    <div class="contents">
+                                        <img src="images/davido.jpg" alt="" class="float-start mt-1">
+                                        <div class="d-inline-block">
+                                            <h5 class="d-inline-block mb-0">Davido</h5>
+                                            <i class="bi bi-patch-check-fill text-primary"></i>
+                                            <div><small style="font-size: 16px;">@davido</small></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-white text-dark rounded-pill px-3 mt-3 me-3" style="font-weight: 600;">Follow</button>
+                                    </div>
+                                   
+                                </div>
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="d-flex justify-content-between follow">
+                                    <div class="contents">
+                                        <img src="images/peter-obi.jpg" alt="" class="float-start mt-1">
+                                        <div class="d-inline-block">
+                                            <h5 class="d-inline-block mb-0">Peter Obi</h5>
+                                            <i class="bi bi-patch-check-fill text-primary"></i>
+                                            <div><small style="font-size: 16px;">@PeterObi</small></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-white text-dark rounded-pill px-3 mt-3 me-3" style="font-weight: 600;">Follow</button>
+                                    </div>
+                                   
+                                </div>
+                            </a>
+
+                            <a href="#" class="d-block">
+                                <div class="d-flex justify-content-between follow">
+                                    <div class="contents">
+                                        <img src="images/channel-img.jpg" alt="" class="float-start mt-1">
+                                        <div class="d-inline-block">
+                                            <h5 class="d-inline-block mb-0">Channels Television</h5>
+                                            <i class="bi bi-patch-check-fill text-primary"></i>
+                                            <div><small style="font-size: 16px;">@channelstv</small></div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <button class="btn bg-white text-dark rounded-pill px-3 mt-3 me-3" style="font-weight: 600;">Follow</button>
+                                    </div>
+                                   
+                                </div>
+                            </a>
+
+                            <div class="show-more">
+                                <a href="#" class="text-primary mb-2 ms-3 d-block">Show more</a>
+                            </div>
+                        </div>
+
+                        <div class="footer-nav">
+                            <a href="#">Terms of Service</a>
+                            <a href="#">Privacy Policy</a>
+                            <a href="#">Cookie Policy</a>
+                            <a href="#">Accessibility</a>
+                            <a href="#">Ads info</a>
+                            <a href="#">More <i class="fa-solid fa-ellipsis"></i></a>
+                            <p class="d-inline-block">&copy; 2024 X Corps.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

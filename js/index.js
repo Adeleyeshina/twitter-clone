@@ -2,7 +2,7 @@
 
 var searchInput = $(".search-bar input");
 var searchBar = $(".search-bar");
-
+searchInput = document.getElementsByClassName('search-bar')[0]
 
 //This work for reaction when when the input is focused
 $(".search-bar input").focus(function (){
@@ -26,6 +26,7 @@ $(".search-bar input").focusout(function (){
     $(".search-abt").hide()
     $(".badge").css("opacity", "0");
 });
+
 
 
 //This work for reaction when text is being inserted in the input 
